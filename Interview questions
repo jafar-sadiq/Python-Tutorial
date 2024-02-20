@@ -1,0 +1,11 @@
+# Write a Python program to find sequences of lowercase letters joined with an underscore
+
+# Input: hello_world 123 HI_HI 9f8 a_jj
+# hello_world a_jj
+
+s="hello_world 123 HI_HI 9f8 a_jj"
+for word in s.split():
+    if word.islower() and "_" in word:
+        print(word)
+
+-------------------------------------------------------------------------
