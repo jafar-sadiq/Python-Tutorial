@@ -1,0 +1,104 @@
+Day1 Notes
+What is a programming language?
+	- Set of instructions
+
+
+Example:
+	- Cook dish
+		○ Step 1  (instruction)
+		○ Step 2
+
+Types:
+	1. Low level
+		a. Machine understable (0 or 1) 00010100101010
+		b. Difficult
+		c. Very very fast (no extra work for machine)
+		d. Ex: Assembly languagee
+		
+		
+	2. Middle
+		a. User friendly syntax or structure to write code 
+			Int a = 10;
+			Int b = 10;
+			Printf("%d", a+b);
+			
+		b. int a = 10;
+		c. Fast (compared to low level its slower, some extra work for machine such as converting given instruction to machine understandable language)
+		d. Ex: C, C++
+
+		C:
+			1. Go to memory system
+			2. Find some memory addr which is free
+			3. Store the given data
+		
+		
+	1. High
+		a. Even more human understable, similar to general languages
+			A=B=10
+			Print(a+b)
+			
+		b. A=10
+		c. Slow compared to middle (
+		d. Ex: python
+
+	
+		Py:
+			i. Understand the type of data
+			ii. Go to memory system
+			iii. Find if any relaveant data already avilable in memory location, use it. Or store in new memory.
+			iv. Store the given data
+	
+
+
+Memory management: 
+
+A=10 
+B=10 
+
+In C: 
+[10] [] [] [10][][][][][][][][][][][][][][][][][][] 
+A               B
+
+B=11
+[10] [] [] [11][][][][][][][][][][][][][][][][][][] 
+A               B
+
+
+
+In Python: 
+[10] [] [] [10][][][][][][][][][][][][][][][][][][] 
+A B 
+
+B=11 
+[10] [] [] [][][][11] 
+A                        B
+
+
+
+Intro to Python:
+	1. Platform independent
+	2. Instructions can be given both in command prompt or combindly in .py file
+	3. Interpreter (line by line exec)
+	Example: if your code have 100 lines, and there are errors in line 4,77 then python only shows the error at line 4. only after fixing it, it will go next and then reports error at 77 (unlike compiler which runs all mode at once)
+		line 1 
+		line 2 
+		line 2 
+		line 4 erros 
+		. 
+		. 
+		. 
+		line 77 errors 
+		. 
+		. 
+		line 100
+		
+		
+Indentation:
+	- To isolate the code blocks or execute based on specific conditions
+	- Similar to margining where we separate side headings and inside data
+		If <condition>:
+			Execute this…
+		Else:
+			Execute this…
+	- Ideal 4 spaces
+More on this in conditional statements/loops/functions
