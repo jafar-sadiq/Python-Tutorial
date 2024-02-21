@@ -173,6 +173,29 @@ class Employee:
         self.designation = designation
     
     def login(self):
+        print(f"{self.id} is logged in.")
+    
+    def logout(self):
+        print(f"{self.id} is logged off.")
+    
+    def print_details(self):
+        print(f"Name is {self.name}\nID is {self.id}\nDesignation is {self.designation}")
+
+jhansi = Employee("jhansi", "ABCD", "Software Engineer")
+jhansi.login()
+
+raj = Employee("Raj", "XYZ", "General Manager")
+raj.login()
+
+-----------------------------------------------------------
+
+class Employee:
+    def __init__(self, name, id, designation):
+        self.name = name
+        self.id = id
+        self.designation = designation
+    
+    def login(self):
         print(f"{self.name} is logged in.")
     
     def logout(self):
@@ -189,3 +212,30 @@ jhansi.print_details()
 
 raj = Employee("Raj", "XYZ", "General Manager")
 raj.print_details()
+
+-----------------------------------------------------------
+
+class Animal:
+    def __init__(self, name, type, legs):
+        self.name = name
+        self.type = type
+        self.legs = legs
+        
+    def bark(self):
+        print("auuuuuuuuu...")
+
+class Dog(Animal):
+    def __init__(self, name, type, legs):
+        super().__init__(name, type, legs)
+    
+    def bark(self):
+        print("bhav bhav...")
+    
+    def get_legs(self):
+        print("Legs are: ", self.legs)
+
+dog = Dog("John", "Carnivorous", 4)
+dog.bark()
+dog.get_legs()
+
+-----------------------------------------------------------
